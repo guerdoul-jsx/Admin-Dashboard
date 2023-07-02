@@ -1,6 +1,4 @@
 import "./App.css";
-import DashboardIcon from "./Icons/DashboardIcon";
-import Sidebar from "./components/sidebar/Sidebar";
 import AdminLayout from "./layouts/admin/index";
 import AuthLayout from "./layouts/auth/index";
 
@@ -18,7 +16,7 @@ function App() {
         <Routes>
           <Route path="admin/*" element={<AdminLayout />} />
           <Route path="auth/*" element={<AuthLayout />} />
-          <Route path="/" element={<Navigate to="/admin" replace />} />
+          <Route path="/" element={<Navigate to="/admin/default" replace />} />
         </Routes>
       </Router>
     </>

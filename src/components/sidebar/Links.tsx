@@ -18,11 +18,13 @@ const SidebarLinks = (props: any) => {
             <Link
               key={index}
               to={layout + "/" + path}
-              className={`space-y-4 rounded-xl p-2  ${
-                activeRoute(path) ? "bg-primary text-white" : "text-secondary"
+              className={`rounded-xl px-4 py-2 ${
+                activeRoute(path)
+                  ? "bg-primary text-white shadow-md ring-[0.5px]"
+                  : "text-secondary"
               }`}
             >
-              <div className="flex items-center justify-start space-x-4 font-medium">
+              <div className="flex items-center justify-start space-x-8 font-medium">
                 {activeRoute(path) ? activeIcon : NavIcon}
                 <h2 className="flex-1">{name}</h2>
               </div>
