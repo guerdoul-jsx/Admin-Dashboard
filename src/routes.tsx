@@ -32,7 +32,7 @@ import SignOutActiveIcon from "./Icons/SignOutActiveIcon";
 
 import { RoutesTypes } from "./types";
 
-const routes = [
+const routes: RoutesTypes[] = [
   {
     name: "Dashboard",
     layout: "/admin",

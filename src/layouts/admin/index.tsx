@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Navbar from "../../components/navbar/index";
+import Navbar from "../../components/navbar/Navbar";
 import routes from "../../routes";
 import { RoutesTypes } from "../../types";
 import { useLocation } from "react-router-dom";
+import Widgets from "../../components/widgets/Widgets";
+import { ArrowUpTrayIcon } from "@heroicons/react/20/solid";
 
 const index = () => {
   const [open, setOpen] = useState(true);
@@ -12,6 +14,7 @@ const index = () => {
 
   React.useEffect(() => {
     getActiveRoute(routes);
+    console.log("value of sidebar", open);
   }, [location.pathname]);
 
   const getActiveRoute = (routes: RoutesTypes[]) => {
@@ -29,11 +32,16 @@ const index = () => {
   };
 
   return (
-    <div className="flex flex-row w-full h-full">
-      <Sidebar open={open} onClose={() => {}} setOpen={setOpen} />
-      <main className="flex-1 xl:ml-[300px]">
+    <div className="flex flex-col w-full h-full">
+      <Sidebar open={open} setOpen={setOpen} />
+      <main className="xl:ml-[300px]">
         <Navbar brandText={currentRoute} setOpen={setOpen} open={open} />
       </main>
+      <div className="xl:ml-[300px]">
+        <div className="flex flex-wrap items-center m-2 md:p-4 xl:p-8">
+          <Widgets />
+        </div>
+      </div>
     </div>
   );
 };

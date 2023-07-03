@@ -5,7 +5,7 @@ const Notification = (props: any) => {
   const { Notifications } = props;
   return (
     <>
-      <Popover className="relative mx-auto md:mx-0">
+      <Popover className="relative ">
         <Popover.Button className="bg-bgNotification focus:border-orange focus:outline-orange w-[40px] h-[40px] flex items-center justify-center rounded-md relative">
           <span className="absolute w-2 h-2 rounded-full top-1 right-1 bg-red"></span>
           <NotificationIcon />

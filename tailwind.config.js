@@ -13,6 +13,11 @@ export default {
       input: "#F9FAFB",
       red: "#EF4444",
       bgNotification: "#FFFAF1",
+      Pink: "#FA5A7D",
+      lightPink: "#FFE2E5",
+      lightOrange: "#FFF4DE",
+      lightGreen: "#DCFCE7",
+      lightPurple: "#F3E8FF",
     },
     extend: {},
     screens: {

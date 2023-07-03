@@ -18,7 +18,7 @@ const people = [
   },
 ];
 
-function classNames(...classes: any[]) {
+function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
@@ -29,13 +29,15 @@ const Languages = () => {
     <Listbox value={selected} onChange={setSelected}>
       {({ open }) => (
         <>
-          <div className="relative hidden md:flex">
+          <div className="relative z-50">
             <Listbox.Button className="relative w-full cursor-pointer rounded-md bg-white py-1.5 pl-3 pr-10 text-left text-gray-900 focus:outline-none sm:text-sm sm:leading-6">
               <span className="flex items-center">
                 <span className="flex-shrink-0 w-5 h-5 rounded-full">
                   {selected.avatar}
                 </span>
-                <span className="block ml-3 truncate">{selected.name}</span>
+                <span className="block ml-3 font-semibold truncate">
+                  {selected.name}
+                </span>
               </span>
               <span className="absolute inset-y-0 right-0 flex items-center pr-2 ml-3 pointer-events-none">
                 <ChevronDownIcon

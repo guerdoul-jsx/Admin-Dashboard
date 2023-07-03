@@ -1,6 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
 import { RoutesTypes } from "../../types";
-const SidebarLinks = (props: any) => {
+import { SidebarLinksProps } from "../../types";
+
+const SidebarLinks = (props: SidebarLinksProps) => {
   let location = useLocation();
 
   const { routes } = props;
@@ -12,7 +14,7 @@ const SidebarLinks = (props: any) => {
 
   const createLinks = (routes: RoutesTypes[]) => {
     return routes.map(
-      ({ layout, path, component, icon: NavIcon, name, activeIcon }, index) => {
+      ({ layout, path, icon: NavIcon, name, activeIcon }, index) => {
         if (layout === "/admin" || layout === "/auth") {
           return (
             <Link
