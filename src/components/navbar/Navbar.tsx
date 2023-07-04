@@ -12,7 +12,7 @@ type NavbarProps = SidebarProps & {
 const index = (props: NavbarProps) => {
   const { setOpen, open, brandText } = props;
   return (
-    <nav className="sticky top-0 bg-white shadow-sm">
+    <nav className="sticky top-0 z-40 bg-white shadow-sm">
       <main className="flex flex-col-reverse flex-wrap p-4 md:space-y-0 md:flex-nowrap md:flex-row md:items-center md:justify-between">
         <h1 className="text-2xl font-semibold basis-1/2 md:basis-1/4">
           {brandText}

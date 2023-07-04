@@ -12,8 +12,10 @@
   "dependencies": {
     "@headlessui/react": "^1.7.15",
     "@heroicons/react": "^2.0.18",
+    "apexcharts": "^3.41.0",
     "flag-icons": "^6.7.0",
     "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",
     "tailwind-scrollbar-hide": "^1.1.7",

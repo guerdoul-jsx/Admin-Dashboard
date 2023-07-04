@@ -18,6 +18,9 @@ export default {
       lightOrange: "#FFF4DE",
       lightGreen: "#DCFCE7",
       lightPurple: "#F3E8FF",
+      redLine: "#F64E60",
+      purpleLine: "#A700FF",
+      greenLine: "#3CD856",
     },
     extend: {},
     screens: {
@@ -27,6 +30,8 @@ export default {
       "md-max": { max: "868px" },
       lg: "992px",
       "lg-max": { max: "992px" },
+      mg: "1067px",
+      "mg-max": { max: "1067px" },
       xl: "1200px",
       "xl-max": { max: "1200px" },
       "2xl": "1320px",
