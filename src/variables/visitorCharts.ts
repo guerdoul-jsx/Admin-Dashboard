@@ -64,7 +64,7 @@ export const lineChartOptionsTotalSpent = {
     labels: {
       style: {
         colors: "#A3AED0",
-        fontSize: "10px",
+        fontSize: "8px",
         fontWeight: "500",
       },
     },

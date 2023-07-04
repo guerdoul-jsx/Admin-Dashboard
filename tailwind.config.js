@@ -30,6 +30,8 @@ export default {
       "md-max": { max: "868px" },
       lg: "992px",
       "lg-max": { max: "992px" },
+      mg: "1067px",
+      "mg-max": { max: "1067px" },
       xl: "1200px",
       "xl-max": { max: "1200px" },
       "2xl": "1320px",

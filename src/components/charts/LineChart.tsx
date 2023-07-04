@@ -8,7 +8,7 @@ const LineChart = (props: any) => {
       series={series}
       type="line"
       height="200px"
-      width="350px"
+      width="340px"
     />
   );
 };

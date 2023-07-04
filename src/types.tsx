@@ -29,3 +29,19 @@ export interface CardProps extends HTMLAttributes<HTMLDivElement> {
   extra?: string;
   children: React.ReactNode;
 }
+
+export type statsSalesProps = {
+  name: string;
+  price?: number;
+  count?: number;
+  percentage: number;
+  icon: React.ReactNode;
+};
+
+export interface WidgetsProps {
+  statsSales: statsSalesProps[];
+}
+
+export interface ChartTitleProps {
+  name: string;
+}
