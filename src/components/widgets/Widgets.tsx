@@ -46,19 +46,19 @@ function formatPriceShorthand(price: number) {
 
 const Widgets = () => {
   return (
-    <Card extra="w-full md:basis-3/4 lg:basis-[62%] xl:basis-[67%] py-4 px-4 h-[430px] lg:h-[280px]">
-      <div className="absolute sales-container ">
+    <Card>
+      <div className="sales-container xl:h-[280px] p-4">
         <div className="flex items-center justify-between place-items-center section-info">
           <div>
             <h1 className="text-xl font-semibold">Today’s Sales</h1>
             <h2 className="text-sm text-secondary">Sales Summery</h2>
           </div>
-          <button className="flex items-center space-x-2 p-2 rounded-md mr-4 border-[1px] border-body">
+          <button className="flex items-center space-x-2 p-2 rounded-md mr-4 border-[1px] border-body cursor-pointer">
             <ArrowUpTrayIcon className="w-4 h-4 mr-1" />
             Export
           </button>
         </div>
-        <div className="flex flex-wrap items-center gap-2 my-4 cards-container">
+        <div className="flex flex-wrap items-center justify-around lg:justify-normal gap-2 my-4 cards-container">
           {statsSales.map((state) => {
             return (
               <div
@@ -81,7 +81,7 @@ const Widgets = () => {
                 <h4 className="mb-2 text-sm font-semibold text-Tcolor">
                   {state.name}
                 </h4>
-                <p className="text-[10px] font-medium text-primary">
+                <p className="text-[8px] font-medium text-primary">
                   +{state.percentage}% from yesterday
                 </p>
               </div>

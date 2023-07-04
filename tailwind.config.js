@@ -18,6 +18,9 @@ export default {
       lightOrange: "#FFF4DE",
       lightGreen: "#DCFCE7",
       lightPurple: "#F3E8FF",
+      redLine: "#F64E60",
+      purpleLine: "#A700FF",
+      greenLine: "#3CD856",
     },
     extend: {},
     screens: {
