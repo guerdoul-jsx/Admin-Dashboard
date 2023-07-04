@@ -51,7 +51,7 @@ const index = () => {
             <Revenue />
             <Card>
               <ChartTitle name="Customer Satisfaction" />
-              <ReactApexChart type="area" height={350} />
+              {/* <ReactApexChart type="area" height={350} /> */}
             </Card>
           </div>
         </div>
