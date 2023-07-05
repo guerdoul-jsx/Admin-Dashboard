@@ -21,6 +21,8 @@ export default {
       redLine: "#F64E60",
       purpleLine: "#A700FF",
       greenLine: "#3CD856",
+      lBlue: "#0080DA",
+      lGreen: "#05C283",
     },
     extend: {},
     screens: {

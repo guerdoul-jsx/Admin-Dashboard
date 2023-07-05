@@ -11,7 +11,7 @@ const Widgets = (props: WidgetsProps) => {
         <div className="flex items-center justify-between section-info">
           <div>
             <h1 className="text-xl font-semibold">Today’s Sales</h1>
-            <h2 className="text-sm text-secondary">Sales Summery</h2>
+            <h2 className="text-sm text-secondary">Sales Summary</h2>
           </div>
           <button className="flex items-center space-x-2 p-2 text-Tcolor rounded-md mr-4 border-[1px] border-body cursor-pointer">
             <ArrowUpTrayIcon className="w-4 h-4 mr-1" />
