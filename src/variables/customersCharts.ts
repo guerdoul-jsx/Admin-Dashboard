@@ -1,30 +1,32 @@
 export const CustomersChartData = [
   {
-    name: "Online Sales",
-    data: [14000, 16000, 5700, 16000, 12000, 15800, 21000],
+    name: "This Month",
+    data: [250, 200, 220, 180, 270],
+    color: "#05C283",
   },
   {
-    name: "Offline Sales",
-    data: [14000, 12005, 22010, 6000, 11007, 13005, 11000],
+    name: "last Month",
+    data: [150, 100, 120, 110, 130],
+    color: "#007DD6",
   },
 ];
 
 export const CustomersChartOptions = {
-  legend: {
-    show: true,
+  chart: {
+    type: "area",
+    stacked: false,
+    zoom: {
+      enabled: false,
+    },
+    toolbar: {
+      show: false,
+    },
   },
-
-  theme: {
-    mode: "light",
-  },
-  stroke: {
-    show: true,
-    width: 3,
-    colors: ["#fff"],
-  },
-
   dataLabels: {
     enabled: false,
+  },
+  markers: {
+    size: 5,
   },
   plotOptions: {
     bar: {
@@ -32,49 +34,39 @@ export const CustomersChartOptions = {
       horizontal: false,
     },
   },
-  grid: {
-    show: true,
-  },
-  chart: {
-    type: "bar",
-    toolbar: {
-      show: false,
+  fill: {
+    type: "gradient",
+    gradient: {
+      shadeIntensity: 1,
+      inverseColors: false,
+      opacityFrom: 0.65,
+      opacityTo: 0.05,
+      stops: [20, 100, 100, 100],
     },
-  },
-  xaxis: {
-    categories: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
-    ],
-    axisBorder: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-    labels: {
-      style: {
-        colors: "#A3AED0",
-        fontSize: "8px",
-        fontWeight: "500",
-        textDecoration: "none",
-      },
-    },
-    type: "text",
-    range: undefined,
   },
   yaxis: {
-    show: true,
-    axisBorder: {
-      show: true,
+    show: false,
+  },
+  xaxis: {
+    categories: [], // empty array to hide x-axis labels
+    labels: {
+      show: false, // hide x-axis labels
     },
-    min: 0,
-    max: 25000,
-    tickAmount: 5,
+    axisBorder: {
+      show: false, // hide x-axis line
+    },
+    axisTicks: {
+      show: false, // hide x-axis ticks
+    },
+    show: false,
+  },
+  tooltip: {
+    shared: true,
+  },
+  legend: {
+    show: false,
+  },
+  grid: {
+    show: false,
   },
 };

@@ -14,6 +14,13 @@ import ReactApexChart from "react-apexcharts";
 
 import Revenue from "../../components/revenue/Revenue";
 
+import Customers from "../../components/customers/Customers";
+import TargetAndReality from "../../components/charts/TargetAndReality";
+import {
+  SalesChartDataTotalSales,
+  SalesChartOptionsTotalSales,
+} from "../../variables/RealitySales";
+
 const index = () => {
   const [open, setOpen] = useState(true);
   const [currentRoute, setCurrentRoute] = React.useState("Dashboard");
@@ -49,10 +56,13 @@ const index = () => {
           </div>
           <div className="grid grid-cols-1 px-4 mt-3 md:grid-cols-2 xl:grid-cols-3 gap-y-2 xl:gap-y-0 gap-x-4">
             <Revenue />
-            <Card>
-              <ChartTitle name="Customer Satisfaction" />
-              {/* <ReactApexChart type="area" height={350} /> */}
-            </Card>
+            <Customers />
+            <TargetAndReality
+              SalesChartDataTotalSales={SalesChartDataTotalSales}
+              SalesChartOptionsTotalSales={
+                SalesChartOptionsTotalSales as ApexCharts.ApexOptions
+              }
+            />
           </div>
         </div>
       </main>
