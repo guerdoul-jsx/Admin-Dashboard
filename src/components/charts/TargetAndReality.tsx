@@ -8,15 +8,7 @@ import {
   totalTargetSales,
 } from "../../variables/RealitySales";
 
-type SalesChartDataReality = {
-  name: string;
-  data: number[];
-  color: string;
-}[];
-type TargetAndRealityProps = {
-  SalesChartOptionsTotalSales: ApexCharts.ApexOptions;
-  SalesChartDataTotalSales: SalesChartDataReality;
-};
+import { SalesChartDataReality, TargetAndRealityProps } from "../../types";
 
 const TargetAndReality = (props: TargetAndRealityProps) => {
   function formatPriceWithCommas(price: number): string {
