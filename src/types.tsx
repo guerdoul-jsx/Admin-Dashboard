@@ -45,3 +45,14 @@ export interface WidgetsProps {
 export interface ChartTitleProps {
   name: string;
 }
+
+export type SalesChartDataReality = {
+  name: string;
+  data: number[];
+  color: string;
+}[];
+
+export type TargetAndRealityProps = {
+  SalesChartOptionsTotalSales: ApexCharts.ApexOptions;
+  SalesChartDataTotalSales: SalesChartDataReality;
+};
