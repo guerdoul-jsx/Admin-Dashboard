@@ -9,7 +9,6 @@ import SalesReport from "./views/admin/sales/SalesReport";
 import Settings from "./views/admin/settings/Settings";
 
 // User Imports
-import SignIn from "./views/auth/Authentication/signin/SignIn";
 import SignOut from "./views/auth/Authentication/signout/SignOut";
 
 // Icons

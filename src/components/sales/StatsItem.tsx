@@ -1,4 +1,3 @@
-import React from "react";
 import { statsSalesProps } from "../../types";
 
 function formatPriceShorthand(price: number) {

@@ -2,7 +2,6 @@ import NotificationIcon from "../../Icons/Notification";
 import { Popover } from "@headlessui/react";
 
 const Notification = (props: any) => {
-  const { Notifications } = props;
   return (
     <>
       <Popover className="relative ">

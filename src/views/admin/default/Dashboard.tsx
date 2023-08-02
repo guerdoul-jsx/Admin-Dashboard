@@ -1,4 +1,3 @@
-import React from "react";
 import SalesRevenue from "../../../components/sales/TodaysSales";
 import VisitorInsights from "../../../components/visitor/VisitorInsights";
 import Revenue from "../../../components/revenue/Revenue";

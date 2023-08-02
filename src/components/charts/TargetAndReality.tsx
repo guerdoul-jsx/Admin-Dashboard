@@ -8,7 +8,7 @@ import {
   totalTargetSales,
 } from "../../variables/RealitySales";
 
-import { SalesChartDataReality, TargetAndRealityProps } from "../../types";
+import { TargetAndRealityProps } from "../../types";
 
 const TargetAndReality = (props: TargetAndRealityProps) => {
   function formatPriceWithCommas(price: number): string {

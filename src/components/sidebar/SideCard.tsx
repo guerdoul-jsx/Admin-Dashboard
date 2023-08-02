@@ -1,4 +1,3 @@
-import React from "react";
 import LogoProIcon from "../../Icons/LogoProIcon";
 
 const SideCard = () => {
