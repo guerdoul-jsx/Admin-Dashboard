@@ -1,4 +1,3 @@
-import React from "react";
 import Widgets from "../widgets/Widgets";
 import SalesStatsIcon from "../../Icons/salesStatsIcon";
 import OrderStatsIcon from "../../Icons/orderStatsIcon";
